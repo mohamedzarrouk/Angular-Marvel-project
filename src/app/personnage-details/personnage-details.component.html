@@ -1,0 +1,18 @@
+<h2>Personnage Details</h2> 
+
+<hr/>
+<div *ngIf="personnage">
+  <div>
+    <label><b>Nom: </b></label> {{personnage.nom}}
+  </div>
+  <div>
+    <label><b>Description: </b></label> {{personnage.description}}
+  </div>
+  <div>
+    <label><b>Image: </b></label> {{personnage.image}}
+  </div>  
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Personnage List</button><br>
